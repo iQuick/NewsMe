@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cut_line_color">#44333333</color>
+    <color name="sex_boy">#2196F3</color>
+    <color name="sex_girl">#F48FB1</color>
+
+    <color name="textColorSecondaryInverseNormal">#AFFFFFFF</color>
+    <color name="textColorSecondaryInverseSelecte">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blue_primary">#2196F3</color>
+    <color name="blue_primary_dark">#1976D2</color>
+    <color name="blue_primary_light">#90CAF9</color>
+    <color name="blue_accent">#2196F3</color>
+    <color name="blue_text_light">#333333</color>
+    <color name="blue_text_dark">#7D7D7D</color>
+    <color name="blue_backgroud">#ffffff</color>
+
+
+    <color name="indigo_primary">#3F51B5</color>
+    <color name="indigo_primary_dark">#303F9F</color>
+    <color name="indigo_primary_light">#C5CAE9</color>
+    <color name="indigo_accent">#3F51B5</color>
+    <color name="indigo_text_light">#333333</color>
+    <color name="indigo_text_dark">#7D7D7D</color>
+    <color name="indigo_backgroud">#ffffff</color>
+
+
+    <color name="green_primary">#4CAF50</color>
+    <color name="green_primary_dark">#388E3C</color>
+    <color name="green_primary_light">#C8E6C9</color>
+    <color name="green_accent">#4CAF50</color>
+    <color name="green_text_light">#333333</color>
+    <color name="green_text_dark">#7D7D7D</color>
+    <color name="green_backgroud">#ffffff</color>
+
+
+    <color name="red_primary">#f44336</color>
+    <color name="red_primary_dark">#d32f2f</color>
+    <color name="red_primary_light">#ef9a9a</color>
+    <color name="red_accent">#f44336</color>
+    <color name="red_text_light">#333333</color>
+    <color name="red_text_dark">#7D7D7D</color>
+    <color name="red_backgroud">#ffffff</color>
+
+
+    <color name="blue_grey_primary">#607D8B</color>
+    <color name="blue_grey_primary_dark">#455A64</color>
+    <color name="blue_grey_primary_light">#B0BEC5</color>
+    <color name="blue_grey_accent">#607D8B</color>
+    <color name="blue_grey_text_light">#333333</color>
+    <color name="blue_grey_text_dark">#7D7D7D</color>
+    <color name="blue_grey_backgroud">#ffffff</color>
+
+    <color name="black_primary">#000</color>
+    <color name="black_primary_dark">#000</color>
+    <color name="black_primary_light">#666</color>
+    <color name="black_accent">#000</color>
+    <color name="black_text_light">#FFFFFF</color>
+    <color name="black_text_dark">#9B9B9B</color>
+    <color name="black_backgroud">#2D2D2D</color>
+
+    <color name="purple_primary">#9C27B0</color>
+    <color name="purple_primary_dark">#7B1FA2</color>
+    <color name="purple_primary_light">#CE93D8</color>
+    <color name="purple_accent">#9C27B0</color>
+    <color name="purple_backgroud">#ffffff</color>
+
+
+    <color name="orange_primary">#FF9800</color>
+    <color name="orange_primary_dark">#F57C00</color>
+    <color name="orange_primary_light">#FFCC80</color>
+    <color name="orange_accent">#FF9800</color>
+    <color name="orange_text_light">#333333</color>
+    <color name="orange_text_dark">#7D7D7D</color>
+    <color name="orange_backgroud">#ffffff</color>
+
+
+    <color name="pink_primary">#E91E63</color>
+    <color name="pink_primary_dark">#C2185B</color>
+    <color name="pink_primary_light">#F48FB1</color>
+    <color name="pink_accent">#E91E63</color>
+    <color name="pink_text_light">#333333</color>
+    <color name="pink_text_dark">#7D7D7D</color>
+    <color name="pink_backgroud">#ffffff</color>
+</resources>

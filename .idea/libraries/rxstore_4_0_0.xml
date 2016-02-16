@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="rxstore-4.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/au.com.gridstone.rxstore/rxstore/4.0.0/c9fa6858a801225aa209547defcfb45042cb7f1d/rxstore-4.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/au.com.gridstone.rxstore/rxstore/4.0.0/3464d1cad2a6890307c582a7119364d790f05df6/rxstore-4.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="converter-gson-4.0.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/au.com.gridstone.rxstore/converter-gson/4.0.0/b2114367b9a6af5ac5e2d22cc4c26239aa27e549/converter-gson-4.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/au.com.gridstone.rxstore/converter-gson/4.0.0/2cf32c4ec30e690fc142782a25e8bcac6429e092/converter-gson-4.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

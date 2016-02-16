@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="sina_video_videoview_layers">
+        <item>@layout/control_layer</item>
+    </array>
+    <!-- 新的结构 -->
+    <array name="sv_videoview_layers">
+        <item>@array/sv_videoview_layer_controllayer</item>
+    </array>
+    <!-- 一组竖屏+横屏 -->
+    <array name="sv_videoview_layer_controllayer">
+        <item>@layout/control_layer</item>
+        <item>@layout/control_layer_horizon</item>
+    </array>
+
+</resources>

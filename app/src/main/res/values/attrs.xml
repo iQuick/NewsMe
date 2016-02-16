@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorPrimaryLight" format="reference|color" />
+    <attr name="colorTextLight" format="reference|color"/>
+    <attr name="colorTextDark" format="reference|color"/>
+    <attr name="colorBackground" format="reference|color"/>
+    <attr name="colorNavItem" format="reference|color"/>
+</resources>

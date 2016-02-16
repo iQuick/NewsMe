@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sina.sinavideo.sdk.VDVideoViewLayer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 顶部控制栏 -->
+
+    <com.sina.sinavideo.sdk.container.VDVideoControlTopContainer
+        android:id="@+id/container_top"
+        android:layout_width="match_parent"
+        android:layout_height="44.5dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/play_ctrl_title_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:useStatusBar="true">
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoBackButton
+            android:id="@+id/backButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"/>
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoTitleTextView
+            android:id="@+id/titleButton1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoDecodingButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/controller_title_share_btn_marginRight"
+            android:padding="@dimen/btn_padding"/>
+
+        <com.sina.sinavideo.sdk.widgets.playlist.VDVideoRelatedButton
+            android:id="@+id/listButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/controller_title_share_btn_marginRight"
+            android:padding="@dimen/btn_padding"/>
+    </com.sina.sinavideo.sdk.container.VDVideoControlTopContainer>
+
+    <!-- 底部控制栏 -->
+
+    <com.sina.sinavideo.sdk.container.VDVideoControlBottomContainer
+        android:id="@+id/container_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/play_ctrl_bottom_bg"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoPlayButton
+            android:id="@+id/playerBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoTimeTextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"/>
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoPlaySeekBar
+            android:id="@+id/playerseek2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/controller_bottom_seekbar_marginLeft"
+            android:layout_marginRight="@dimen/controller_bottom_seekbar_marginRight"
+            android:layout_weight="1"
+            android:maxHeight="@dimen/controller_bottom_seekbar_maxHeight"
+            android:minHeight="@dimen/controller_bottom_seekbar_minHeight"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:progressDrawable="@drawable/play_seekbar_color_bg"
+            android:thumb="@drawable/play_ctrl_sound_ball"
+            android:thumbOffset="0dip"/>
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoSoundSeekButton
+            android:id="@+id/soundSeek1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:soundSeekContainer="@+id/seekContainer1"/>
+    </com.sina.sinavideo.sdk.container.VDVideoControlBottomContainer>
+
+    <!-- 中间的控制区 -->
+
+    <com.sina.sinavideo.sdk.container.VDVideoControlPanelContainer
+        android:id="@+id/controlLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container_bottom"
+        android:layout_below="@id/container_top"
+        app:gestureLevel="gestureLevelSingleTap|gestureLevelHorizonScroll|gestureLevelVerticalScroll|gestureLevelDoubleTap"/>
+
+    <!-- 播放列表 -->
+
+    <com.sina.sinavideo.sdk.widgets.playlist.VDVideoPlayListContainer
+        android:id="@+id/playlist1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/container_bottom"
+        android:layout_below="@id/container_top"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/item_track"
+                android:visibility="gone"/>
+
+            <com.sina.sinavideo.sdk.widgets.playlist.VDVideoPlayListView
+                android:id="@+id/play_list_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#80000000"
+                android:cacheColorHint="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants"
+                android:fadingEdge="none"
+                android:scrollbars="none"
+                android:visibility="visible"
+                app:listItem="@layout/video_list_sport"/>
+        </RelativeLayout>
+    </com.sina.sinavideo.sdk.widgets.playlist.VDVideoPlayListContainer>
+
+    <!-- 声音控制以及进度控制 -->
+
+    <com.sina.sinavideo.sdk.container.VDVideoControlSoundSeekBarContainer
+        android:id="@id/seekContainer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/controller_right_volumn_seekbar_marginRight"
+        android:background="@drawable/play_ctrl_volume_progressbar_bg"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:visibility="gone">
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoSoundSeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:maxHeight="@dimen/controller_right_volumn_seekbar_maxHeight"
+            android:minHeight="@dimen/controller_right_volumn_seekbar_minHeight"
+            android:progressDrawable="@drawable/play_seekbar_color_bg"
+            android:thumb="@drawable/play_ctrl_sound_ball"
+            android:thumbOffset="0dip"
+            android:visibility="visible"/>
+    </com.sina.sinavideo.sdk.container.VDVideoControlSoundSeekBarContainer>
+
+    <com.sina.sinavideo.sdk.container.VDVideoControlContainer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoTimeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </com.sina.sinavideo.sdk.container.VDVideoControlContainer>
+
+    <com.sina.sinavideo.sdk.container.VDVideoControlSoundContainer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoSoundSeekImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoSoundSeekPercentView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </com.sina.sinavideo.sdk.container.VDVideoControlSoundContainer>
+
+    <com.sina.sinavideo.sdk.container.VDVideoControlLightingContainer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gestrue_brightness"/>
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoLightingPercentView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+    </com.sina.sinavideo.sdk.container.VDVideoControlLightingContainer>
+
+    <com.sina.sinavideo.sdk.widgets.VDVideoDoubleTapPlayView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <com.sina.sinavideo.sdk.widgets.VDVideoLoadingProgress
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateDrawable="@drawable/loading_iamge_progress"
+        android:indeterminateDuration="1000"
+        android:visibility="gone" />
+
+    <com.sina.sinavideo.sdk.container.VDVideoControlProgressContainer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/play_seek_flag_bg"
+        android:gravity="center_vertical"
+        android:paddingRight="5dp"
+        android:visibility="gone">
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoProgressIndicaterView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/play_ctrl_seek_forward"/>
+
+        <com.sina.sinavideo.sdk.widgets.VDVideoTimeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"/>
+    </com.sina.sinavideo.sdk.container.VDVideoControlProgressContainer>
+
+    <com.sina.sinavideo.sdk.widgets.VDVideoTipLayout
+        android:id="@id/tipLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_top"
+        android:layout_centerHorizontal="true"
+        android:background="#0078db"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/media_controller_tip_padding"
+        android:visibility="gone"/>
+
+    <com.sina.sinavideo.sdk.widgets.VDVideoIndicaterLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+    <com.sina.sinavideo.sdk.widgets.VDVideoErrorLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"/>
+
+</com.sina.sinavideo.sdk.VDVideoViewLayer>

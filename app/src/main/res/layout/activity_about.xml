@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AboutActivity">
+
+    <data>
+
+        <variable
+            name="config"
+            type="me.imli.newme.BuildConfig"/>
+    </data>
+
+    <me.imli.newme.widget.OhSwipeBackLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?colorBackground">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:navigationIcon="?homeAsUpIndicator"
+                app:popupTheme="@style/MyActionBarPopup"
+                app:theme="@style/MyActionBar"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/toolbar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="@{@string/version(config.VERSION_NAME, config.BUILD_TYPE)}"
+                android:textColor="?colorTextLight"
+                tools:text="版本 1.0.0"/>
+
+            <TextView
+                android:id="@+id/copy_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="@string/copy_right"
+                android:textColor="?colorTextLight"/>
+
+        </RelativeLayout>
+    </me.imli.newme.widget.OhSwipeBackLayout>
+</layout>

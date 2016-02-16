@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BlueTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/blue_primary</item>
+        <item name="colorPrimaryDark">@color/blue_primary_dark</item>
+        <item name="colorAccent">@color/blue_accent</item>
+        <item name="colorPrimaryLight">@color/blue_primary_light</item>
+        <item name="colorTextLight">@color/blue_text_light</item>
+        <item name="colorTextDark">@color/blue_text_dark</item>
+        <item name="colorBackground">@color/blue_backgroud</item>
+        <item name="colorNavItem">@color/item_nav_blue_seletor</item>
+    </style>
+
+    <style name="IndigoTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/indigo_primary</item>
+        <item name="colorPrimaryDark">@color/indigo_primary_dark</item>
+        <item name="colorAccent">@color/indigo_accent</item>
+        <item name="colorPrimaryLight">@color/indigo_primary_light</item>
+        <item name="colorTextLight">@color/indigo_text_light</item>
+        <item name="colorTextDark">@color/indigo_text_dark</item>
+        <item name="colorBackground">@color/indigo_backgroud</item>
+        <item name="colorNavItem">@color/item_nav_indigo_seletor</item>
+    </style>
+
+    <style name="GreenTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorPrimaryDark">@color/green_primary_dark</item>
+        <item name="colorAccent">@color/green_accent</item>
+        <item name="colorPrimaryLight">@color/green_primary_light</item>
+        <item name="colorTextLight">@color/green_text_light</item>
+        <item name="colorTextDark">@color/green_text_dark</item>
+        <item name="colorBackground">@color/green_backgroud</item>
+        <item name="colorNavItem">@color/item_nav_green_seletor</item>
+    </style>
+
+    <style name="RedTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryDark">@color/red_primary_dark</item>
+        <item name="colorAccent">@color/red_accent</item>
+        <item name="colorPrimaryLight">@color/red_primary_light</item>
+        <item name="colorTextLight">@color/red_text_light</item>
+        <item name="colorTextDark">@color/red_text_dark</item>
+        <item name="colorBackground">@color/red_backgroud</item>
+        <item name="colorNavItem">@color/item_nav_red_seletor</item>
+    </style>
+
+    <style name="OrangeTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorPrimaryDark">@color/orange_primary_dark</item>
+        <item name="colorAccent">@color/orange_accent</item>
+        <item name="colorPrimaryLight">@color/orange_primary_light</item>
+        <item name="colorTextLight">@color/orange_text_light</item>
+        <item name="colorTextDark">@color/orange_text_dark</item>
+        <item name="colorBackground">@color/orange_backgroud</item>
+        <item name="colorNavItem">@color/item_nav_orange_seletor</item>
+    </style>
+
+    <style name="PinkTheme" parent="BaseTheme">
+        <item name="colorPrimary">@color/pink_primary</item>
+        <item name="colorPrimaryDark">@color/pink_primary_dark</item>
+        <item name="colorAccent">@color/pink_accent</item>
+        <item name="colorPrimaryLight">@color/pink_primary_light</item>
+        <item name="colorTextLight">@color/pink_text_light</item>
+        <item name="colorTextDark">@color/pink_text_dark</item>
+        <item name="colorBackground">@color/pink_backgroud</item>
+        <item name="colorNavItem">@color/item_nav_pink_seletor</item>
+    </style>
+    
+    <style name="NightTheme" parent="BaseTheme.Night">
+        <item name="colorPrimary">@color/black_primary</item>
+        <item name="colorPrimaryDark">@color/black_primary_dark</item>
+        <item name="colorAccent">@color/black_accent</item>
+        <item name="colorPrimaryLight">@color/black_primary_light</item>
+        <item name="colorTextLight">@color/black_text_light</item>
+        <item name="colorTextDark">@color/black_text_dark</item>
+        <item name="colorBackground">@color/black_backgroud</item>
+        <item name="colorNavItem">@color/item_nav_night_seletor</item>
+    </style>
+
+</resources>

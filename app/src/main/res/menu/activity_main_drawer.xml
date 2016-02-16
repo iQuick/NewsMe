@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_home_grey_500_18dp"
+            android:title="@string/nav_news"/>
+        <item
+            android:id="@+id/nav_jack"
+            android:icon="@drawable/ic_local_cafe_grey_500_18dp"
+            android:title="@string/nav_jack"/>
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/ic_play_arrow_grey_500_18dp"
+            android:title="@string/nav_video"/>
+        <item
+            android:id="@+id/nav_meizi"
+            android:icon="@drawable/ic_local_florist_grey_500_18dp"
+            android:title="@string/nav_meizi"/>
+    </group>
+
+    <item android:title="@string/setting">
+        <menu>
+            <item
+                android:id="@+id/nav_theme"
+                android:icon="@drawable/ic_apps_grey_500_18dp"
+                android:title="@string/theme"/>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_settings_grey_500_18dp"
+                android:title="@string/nav_setting"/>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_brush_grey_500_18dp"
+                android:title="@string/about"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+</menu>

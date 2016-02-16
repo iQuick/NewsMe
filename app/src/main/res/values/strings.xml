@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">私人定制</string>
+    <string name="app_desc">还您自由身！</string>
+    <string name="copy_right">© 2015 Em</string>
+    <string name="version" formatted="false">版本 %s %s</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_custom">自定义</string>
+    <string name="action_send">@string/send</string>
+    <string name="action_settings">@string/setting</string>
+    <string name="action_about">@string/about</string>
+    <string name="action_save">@string/save</string>
+    <string name="action_share">@string/share</string>
+    <string name="action_refresh">@string/refresh</string>
+    <string name="action_set_wallpaper">@string/set_wallpaper</string>
+    
+    <string name="nav_news">新闻</string>
+    <string name="nav_jack">轻松一刻</string>
+    <string name="nav_meizi">福利</string>
+    <string name="nav_video">视频</string>
+    <string name="nav_setting">@string/setting</string>
+    <string name="nav_about">@string/about</string>
+
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="send">发送</string>
+    <string name="setting">设置</string>
+    <string name="about">关于</string>
+    <string name="feedback">意见反馈</string>
+    <string name="share">分享</string>
+    <string name="save">保存</string>
+    <string name="refresh">刷新</string>
+    <string name="theme">主题</string>
+    <string name="tip">提示</string>
+    <string name="load">加载</string>
+    <string name="download">下载</string>
+    <string name="notify">通知</string>
+    <string name="sex">性别</string>
+    <string name="boy">男孩</string>
+    <string name="girl">女孩</string>
+    <string name="custom">自定义</string>
+    <string name="loading">加载中...</string>
+    <string name="downloading">下载中...</string>
+    <string name="wallpaper">壁纸</string>
+
+    <string name="custom_news">@string/custom</string>
+    <string name="about_us">关于我们</string>
+    <string name="set_wallpaper">设置为壁纸</string>
+    <string name="no_update">(T_T) 亲，已经是最新的了哦！</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="clear_cache_tip">您确定要清除缓存么？</string>
+
+    <string name="please_select">请选择</string>
+    <string name="please_wait">请稍后...</string>
+    <string name="please_input_feedback">撰写您的反馈意见</string>
+    <string name="please_select_sex">请选择您的性别</string>
+
+    <string name="error_feedback">(T_T) 亲，出错了,要不您再试试！</string>
+    <string name="error_loading">(T_T) 亲，出错了，请等会再试哦！</string>
+    <string name="error_share">(T_T) 亲，分享出错了，请等会再试哦！</string>
+    <string name="error_save">(T_T) 亲，保存出错了，请等会再试哦！</string>
+    <string name="error_set_wallpaper">(T_T) 亲，设置出错了，请等会再试哦！</string>
+    <string name="error_network">(T_T) 亲，您的网络连接有问题！</string>
+    <string name="error_clear_cache">(T_T) 亲，发成意外了，请等会再试哦！</string>
+
+    <string name="success_feedback">(^ω^) 亲，我们已经收到您的反馈了哦！</string>
+    <string name="success_loading">(^ω^) 亲，加载成功了哦！</string>
+    <string name="success_share">(^ω^) 亲，分享成功了哦！</string>
+    <string name="success_save">(^ω^) 亲，保存成功了哦！</string>
+    <string name="success_set_wallpaper">(^ω^) 亲，设置成功了哦！</string>
+    <string name="success_clear_cache">(^ω^) 亲，打扫完了，应用变干净了哦！</string>
+
+    <string name="tip_update">升级提示</string>
+
+    <string name="tip_msg_update">(T_T) 亲，您的软件版本过低，请您升级后使用！</string>
+    <string name="tip_msg_construction">(T_T) 亲，该功能正在开发中！</string>
+
+    <string name="swipe_back_tip">↑ 返回 ↑</string>
+    <string name="swipe_siwtch_next">↑ 下一页 ↑</string>
+    <string name="swipe_siwtch_previous">↑ 上一页 ↑</string>
+
+    <string name="share_type">text/plain</string>
+    <string name="share_title">(^ω^) 亲，您的私人订制</string>
+    <string name="share_subject">分享</string>
+    <string name="share_content">私人订制，您的私人订制新闻。这个应用很不错哦！(^ω^) 亲，你也来试试吧！</string>
+
+    <string name="setting_basic">基本设置</string>
+    <string name="setting_senior">高级设置</string>
+    <string name="setting_encourage">评分</string>
+    <string name="setting_other">其它</string>
+    <string name="setting_basic_cache">清除缓存</string>
+    <string name="setting_basic_out_clear">退出时清除缓存</string>
+    <string name="setting_basic_notify">通知设置</string>
+    <string name="setting_senior_update">自动检查更新</string>
+    <string name="setting_senior_hid_benefits">隐藏福利</string>
+    <string name="setting_encourage_soure">给个好评 (^ω^)</string>
+    <string name="setting_encourage_share">分享给好友</string>
+    <string name="setting_other_feedbakc">@string/feedback</string>
+    <string name="setting_app_wall">应用墙</string>
+    <string name="setting_desc_hid_benefits">是否开启隐藏福利</string>
+    <string name="setting_notify_is_open">开启通知</string>
+
+    <string name="theme_name_blue">ME蓝</string>
+    <string name="theme_name_indigo">APEC蓝</string>
+    <string name="theme_name_red">中国红</string>
+    <string name="theme_name_green">帽子绿</string>
+    <string name="theme_name_orange">菊花黄</string>
+    <string name="theme_name_pink">脑残粉</string>
+    <string name="theme_name_night">夜间模式</string>
+
+    <string name="sex_boy">男</string>
+    <string name="sex_girl">女</string>
+
+    <string name="test_title_short">老规矩</string>
+    <string name="test_title_long">那顿胖揍记忆犹新啊！给我留下阴影了！</string>
+    <string name="test_context_short">老师：菊花在什么时候盛开？ 小明：大便的时候。 老师：老规矩。 小明：知道，这就滚。</string>
+    <string name="test_context_long">初中时，命不好班主任是专修体育的姓岳名自彦，对小爷可谓一直照顾，一个礼拜半数日子都要接受他拳脚的洗礼。有一次听班长说他有事请假了，于是下午翘课宿舍睡觉，刚躺下点了支烟翘着二郎腿，就听到有人进来，以为同道中人也没起来也没睁眼，只是问道，堂下何人？来人答曰，堂下岳自彦是也……</string>
+
+    <string-array name="Sexs">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+</resources>

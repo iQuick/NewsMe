@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pre_version">version</string>
+    <string name="pre_feedback">feedback</string>
+    <string name="pre_reputation">reputation</string>
+    <string name="pre_share">share</string>
+    <string name="pre_check_update">check_update</string>
+    <string name="pre_hid_benefits">hid_benefits</string>
+    <string name="pre_open_notify">open_notify</string>
+    <string name="pre_clear_cache">clear_cache</string>
+    <string name="pre_app_out_clear">app_out_clear</string>
+    <string name="pre_app_wall">pre_app_wall</string>
+    
+    <string name="pre_screen_notify">screen_notify</string>
+    <string name="pre_is_create_channel">is_create_channel</string>
+
+    <!-- Theme -->
+    <string name="theme_tag_blue">blue</string>
+    <string name="theme_tag_indigo">indigo</string>
+    <string name="theme_tag_red">red</string>
+    <string name="theme_tag_green">green</string>
+    <string name="theme_tag_orange">orange</string>
+    <string name="theme_tag_pink">pink</string>
+    <string name="theme_tag_night">dark</string>
+
+    <!-- Sex -->
+    <string name="pre_sex">sex</string>
+    <string name="sex_is_selected">sex_is_selected</string>
+    <string name="sex_tag_boy">boy</string>
+    <string name="sex_tag_girl">girl</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="me.imli.newme"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+
+    <application
+        android:name=".ImApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ViewerActivity" android:theme="@style/ViewerTheme"/>
+        <activity android:name=".ui.WebActivity"/>
+        <activity android:label="@string/setting" android:name=".ui.SettingActivity"/>
+        <activity android:label="@string/about_us" android:name=".ui.AboutActivity"/>
+        <activity android:label="@string/feedback" android:name=".ui.FeedbackActivity"/>
+        <activity android:label="@string/custom_news" android:name=".ui.CustomNewsActivity"/>
+
+        <service android:name=".server.DownloadServer">
+            <intent-filter>
+                <action android:name="me.imli.newme.server.DownloadServer"></action>
+            </intent-filter>
+        </service>
+
+
+        <!-- ================ 腾讯广告 Start ================ -->
+        <service android:name="com.qq.e.comm.DownloadService" android:exported="false" />
+        <activity android:name="com.qq.e.ads.ADActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+        <!-- ================ 腾讯广告 End ================ -->
+
+        <!-- =========================== UMeng Start =========================== -->
+        <meta-data android:value="56790a6267e58e549e0021b1" android:name="UMENG_APPKEY"></meta-data>
+        <meta-data android:value="${UMENG_CHANNEL_VALUE}" android:name="UMENG_CHANNEL"/>
+        <!-- =========================== UMeng Start =========================== -->
+    </application>
+
+</manifest>

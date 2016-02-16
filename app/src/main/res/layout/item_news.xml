@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="news"
+            type="me.imli.newme.model.News"/>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/image"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@{news.title}"
+                android:textSize="16sp"
+                android:textColor="?colorTextLight"
+                tools:text="@string/test_title_short"/>
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/image"
+                android:layout_below="@id/title"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@id/image"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="?colorTextDark"
+                android:text="@{news.desc}"
+                android:textSize="14sp"
+                tools:text="@string/test_context_short"/>
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/image_loading"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:background="@color/cut_line_color"/>
+    </RelativeLayout>
+</layout>

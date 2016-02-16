@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".WebActivity">
+
+    <data></data>
+
+    <me.imli.newme.widget.OhSwipeBackLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fitsSystemWindows="true"
+                    app:layout_scrollFlags="scroll|enterAlways|snap"
+                    app:navigationIcon="?homeAsUpIndicator"
+                    app:popupTheme="@style/MyActionBarPopup"
+                    app:theme="@style/MyActionBar"/>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?colorBackground"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <me.imli.newme.widget.OhSwipeRefreshLayout
+                    android:id="@+id/refresher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <WebView
+                        android:id="@+id/web"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </me.imli.newme.widget.OhSwipeRefreshLayout>
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:indeterminate="false"
+                    android:padding="0dp"
+                    tools:progress="50"/>
+            </RelativeLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
+    </me.imli.newme.widget.OhSwipeBackLayout>
+
+
+</layout>

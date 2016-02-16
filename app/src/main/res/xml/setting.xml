@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AboutActivity">
+    <PreferenceCategory android:title="@string/setting_basic">
+
+        <Preference
+            android:key="@string/pre_clear_cache"
+            android:title="@string/setting_basic_cache"
+            tools:summary="10 m"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pre_app_out_clear"
+            android:title="@string/setting_basic_out_clear"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pre_open_notify"
+            android:title="@string/setting_notify_is_open"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_senior">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/pre_hid_benefits"
+            android:summary="@string/setting_desc_hid_benefits"
+            android:title="@string/setting_senior_hid_benefits"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="@string/pre_check_update"
+            android:title="@string/setting_senior_update"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/setting_encourage">
+        <Preference
+            android:key="@string/pre_app_wall"
+            android:title="@string/setting_app_wall"/>
+        <Preference
+            android:key="@string/pre_reputation"
+            android:title="@string/setting_encourage_soure"/>
+        <Preference
+            android:key="@string/pre_share"
+            android:title="@string/setting_encourage_share"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_other">
+
+        <Preference
+            android:key="@string/pre_feedback"
+            android:title="@string/setting_other_feedbakc"/>
+        <Preference
+            android:key="@string/pre_version"
+            tools:title="@string/version"/>
+    </PreferenceCategory>
+</PreferenceScreen>
