@@ -5,6 +5,7 @@
 
 ## 编译
 gradle 2.4
+
 studio 1.4
 
 ## 私人订制
@@ -56,4 +57,4 @@ studio 1.4
 * [轻截](http://www.wandoujia.com/apps/me.imli.lightcrop)
 
 ## 感谢
-在此感谢[laowch](https://github.com/laowch)、[oxoooo](https://github.com/oxoooo)及其它开源爱好者
+在此感谢 [laowch](https://github.com/laowch)、[oxoooo](https://github.com/oxoooo) 及其它开源爱好者
