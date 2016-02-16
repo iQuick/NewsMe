@@ -24,7 +24,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.SplashActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/app_name">
             <intent-filter>
@@ -33,6 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".ui.MainActivity" android:label="@string/app_name"/>
         <activity android:name=".ui.ViewerActivity" android:theme="@style/ViewerTheme"/>
         <activity android:name=".ui.WebActivity"/>
         <activity android:label="@string/setting" android:name=".ui.SettingActivity"/>

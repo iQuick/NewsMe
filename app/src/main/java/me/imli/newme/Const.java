@@ -8,6 +8,7 @@ public class Const {
     public static final String AD_APP_ID = "1105141354";
     public static final String AD_B_ID = "9090803845838402";
     public static final String AD_W_ID = "7050306885432416";
+    public static final String AD_S_ID = "9000103837881499";
 
     public static final String DB_NAME = ".newme.db";
     public static final String DB_NEWS_NAME = "me_news";
